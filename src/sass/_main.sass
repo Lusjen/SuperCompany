@@ -1,0 +1,407 @@
+.wrapper
+	max-width: 1229px
+	margin: 0 auto
+	box-shadow: 0 1px 57px rgba(0, 0, 0, 0.96)
+	background-color: #ffffff
+
+.container
+	max-width: 1181px
+	margin: 0 auto
+	overflow: hidden
+	+r(1221)
+		margin: 0 20px
+	
+.header
+	&__top
+		padding: 18px 0 14px
+	&__bottom
+		border: 1px solid #dcdee0
+		margin: 0 auto
+		overflow: hidden
+		position: relative
+	&__left
+		float: left
+		+r(1179)
+			float: none
+			text-align: center
+			margin-bottom: 10px
+	&__right
+		float: right
+		+r(1179)
+			float: none
+			text-align: center
+	&__user
+		+r(1179)
+			top: 0
+			margin: 20px 0
+
+.logo
+	display: inline-block
+	vertical-align: top
+	color: #000203
+	font-size: 37px
+
+.search
+	display: inline-block
+	margin-left: 28px
+	border: 1px solid #dcdee0
+	padding: 0 0 0 9px
+	box-sizing: border-box
+	vertical-align: top
+	+r(760)
+		margin: 0 auto
+		width: 60% 
+		display: flex
+		align-items: center
+	+r(400)
+		width: 70%
+	&__icon
+		padding: 0 9px 0 6px
+		display: inline-block
+		vertical-align: middle 
+
+input[type=text]
+	width: 391px
+	height: 32px
+	border-right: 1px solid #b9bec1
+	letter-spacing: 0.24px
+	+r(760)
+		max-width: 391px
+		flex-grow: 1
+
+.advanced
+	display: inline-block
+	+r(500)
+		display: block
+		margin: 0 auto 20px
+	&__value
+		margin-left: 14px
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		text-decoration: none
+		display: inline-block
+		vertical-align: middle
+
+.email
+	display: inline-block
+	margin-left: 53px
+	+r(500)
+		display: block
+		margin: 0 auto 20px
+	&__icon
+		display: inline-block
+		vertical-align: middle
+		background: #edeff1
+		border-radius: 50%
+		padding: 10px
+	&__value
+		margin-left: 13px
+		display: inline-block
+		vertical-align: middle
+
+.login
+	display: inline-block
+	margin-left: 9px
+	+r(500)
+		display: block
+		margin: 0 auto 20px
+
+.nav
+	font-size: 0
+	+r(400)
+		width: 50%
+		margin: 0 auto
+	&__item
+		display: inline-block
+		+r(400)
+			display: block
+	&__link
+		display: block
+		padding: 17px 25px 17px 25px
+		&.is-active, &:hover
+			background: #383e42
+			color: #ffffff
+		span
+			display: inline-block
+			vertical-align: middle
+			margin-right: 7px
+			text-transform: uppercase
+
+.jobs
+	position: relative
+	top: 16px
+	right: 18px
+	display: flex
+	flex-direction: row
+	align-items: center
+	+r(1179)
+		justify-content: center
+		top: 0
+		margin-bottom: 10px
+		right: 0
+	&__value
+		margin-left: 9px
+		text-transform: uppercase 
+	&__number
+		margin-left: 16px
+		padding: 3px 5px 
+		color: #ffffff
+		font-size: 10px
+		font-weight: 500
+		background:  #ff5f4b
+		border-radius: 6px
+		text-decoration: none
+
+.main
+	display: flex
+	justify-content: space-around
+	overflow: hidden
+	+r(940)
+		display: block
+	&__col
+		width: 34%
+		border: 1px solid #edeff1
+		+r(940)
+			width: 70%
+			margin: 0 auto
+		+r(560)
+			width: 100%
+
+.features
+	padding: 25px 30px
+	position: relative
+	&__title
+		margin-bottom: 3px
+	&__icon
+		position: absolute
+		top: 30px
+		right: 30px
+	&__info
+		margin-top: 30px		
+
+.list
+	&__item
+		margin-bottom: 21px
+		max-width: 311px 
+	&__title
+		display: block
+		margin-bottom: 10px
+
+.getting-started
+	background-color: #60686f
+	padding: 24px 30px 20px 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__title
+		margin: 0 16px 0 28px
+
+.event
+	background-color: #edeff1
+	padding: 23px 30px 21px 30px
+	&__top
+		overflow: hidden
+		margin-bottom: 39px
+	&__photo
+		float: left
+	&__contact
+		float: left
+		margin-left: 14px
+	&__place
+		margin-bottom: 4px
+	&__icon
+		float: right
+	&__description
+		max-width: 302px
+		margin-bottom: 40px
+		p
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.32px
+	&__bottom
+		font-size: 0
+	&__soc-icon
+		display: inline-block
+		vertical-align: middle
+	&__date
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+
+.slider .slick-prev
+	border-radius: 50%
+	z-index: 100
+	left: 78%
+	top: 85%
+	width: 30px
+	height: 30px
+	background: url('../img/rounded.png') #FFF no-repeat center center
+	+r(400)
+		left: 70%
+
+.slider .slick-prev:before
+	content: ''
+
+.slider .slick-next:before
+	content: ''
+
+.slider .slick-next
+	border-radius: 50%
+	z-index: 100
+	right: 5%
+	top: 85%
+	width: 30px
+	height: 30px
+	background: url('../img/rounded2.png') #FFF no-repeat center center
+
+.slider .slick-prev:focus,
+.slider .slick-prev:hover
+	background: url('../img/rounded.png') #FFF no-repeat center center
+
+.slider .slick-next:focus,
+.slider .slick-next:hover
+	background: url('../img/rounded2.png') #FFF no-repeat center center
+
+.workspaces
+	padding-left: 30px
+	overflow: hidden
+	margin-bottom: 16px 
+	&__icon
+		float: left
+	&__title
+		float: left
+		margin-left: 9px
+
+.duracell
+	padding-left: 30px
+	margin-bottom: 37px 
+	&__title
+		margin-bottom: 12px
+	&__description
+		max-width: 302px
+
+.more
+	padding-left: 30px
+	margin-bottom: 27px
+	overflow: hidden
+	&__item
+		border: 1px solid #dcdee0
+		float: left
+		margin-right: 20px
+		padding: 20px 22px 18px 16px
+	&__link
+		margin-bottom: 39px 
+
+.footer
+	padding: 14px 0
+	overflow: hidden
+	&__left
+		float: left
+		+r(900)
+			float: none
+	&__nav
+		display: flex
+		justify-content: space-around
+		margin-bottom: 20px
+		+r(550)
+			display: block
+			text-align: center
+	&__right
+		float: right
+		color: #2e3236
+		font-family: "Myriad Pro"
+		font-size: 11px
+		font-weight: 400
+		opacity: 0.3
+		text-align: right  
+		+r(900)
+			float: none
+			text-align: center
+	&__item
+		margin-right: 60px
+		+r(900)
+			margin-right: 0
+		+r(550)
+			margin-bottom: 20px 
+		a
+			display: block
+			color: #2e3236
+			opacity: 0.5
+			font-size: 11px
+			text-decoration: none
+
+.icon
+	transition: all 0.5s
+	&:hover
+		fill: green
+		transform: rotate(360deg)
+
+.icon-search
+	width: 16px
+	height: 16px
+	fill: #53595e
+
+.icon-settings
+	width: 16px
+	height: 16px
+	fill: #53595e
+
+.icon-home
+	width: 16px
+	height: 16px
+	fill: #383e42
+
+.icon-task
+	width: 13px
+	height: 16px
+
+.icon-shape
+	width: 18px
+	height: 16px
+	fill: #383e42
+
+.icon-recent
+	width: 15px
+	height: 16px
+	fill: #53595e
+
+.icon-link
+	width: 32px
+	height: 32px
+	fill: #959da3
+
+.icon-speech
+	width: 32px
+	height: 32px
+	fill: #959da3
+
+.icon-twitter
+	width: 22px
+	height: 22px
+	fill: #959da3
+
+.icon-jobs
+	width: 15px
+	height: 15px
+	fill: #53595e
+
+.icon-workspace
+	width: 22px
+	height: 18px
+	fill: #959da3
+
+.icon-paperplane
+	width: 32px
+	height: 32px
+	fill: #ffffff
+
+.icon-share
+	width: 32px
+	height: 32px
+	fill: #959da3
+
+.icon-buffer
+	width: 32px
+	height: 32px
+	fill: #959da3

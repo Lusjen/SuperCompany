@@ -1,0 +1,49 @@
+---
+col:
+ - title: Collections
+   link: Top level collections
+   collectionIcon: true
+   list: true
+   list2: false
+ - title: Other Links
+   link: Links to other content
+   linkIcon: true
+   list: false
+   list2: true
+ - gettingStarted: true
+   event: true
+   workspaces: true
+   title: Communities	
+   link: Explore our community areas
+   shareIcon: true
+   duracell: true
+   more: true
+
+list:
+ - titles: Extranet Materials
+   info: Content for collaboration with external participants.
+ - titles: Branding Materials
+   info: All document components (text/graphics/fills/rules, etc.)
+ - titles: Print-ready Materials
+   info: The department that generates a print shop request is responsible for the work. 
+list2:
+ - titles: My DocuShare
+   info: Your personalized DocuShare home page
+ - titles: WorkCentre Scan Repository
+   info: Temporary storage for scanned documents
+ - titles: Contact Information
+   info: Number and e-mail address of the original document creator.
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+
+	<div class="wrapper">
+		{% include "partials/_header.html" %}
+      {% include "partials/_content.html" %}
+		{% include "partials/_footer.html" %}
+	</div>
+   
+
+{% endblock %}
