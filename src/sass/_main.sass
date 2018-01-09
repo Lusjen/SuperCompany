@@ -34,27 +34,75 @@
 		+r(1179)
 			top: 0
 			margin: 20px 0
+	&__logo
+		display: inline-block
+		vertical-align: top
+	&__search
+		display: inline-block
+		vertical-align: top
+		margin-left: 28px
+		+r(760)
+			margin: 20px auto 0
+			display: block
+	&__advanced
+		display: inline-block
+		+r(500)
+			display: block
+			margin: 0 auto 20px
+	&__advanced-value
+		margin-left: 14px
+		display: inline-block
+		vertical-align: middle
+	&__advanced-icon
+		text-decoration: none
+		display: inline-block
+		vertical-align: middle
+	&__email
+		display: inline-block
+		margin-left: 53px
+		+r(500)
+			display: block
+			margin: 0 auto 20px
+	&__email-icon
+		display: inline-block
+		vertical-align: middle
+		background: #edeff1
+		border-radius: 50%
+		padding: 10px
+	&__email-value
+		margin-left: 13px
+		display: inline-block
+		vertical-align: middle
+	&__login
+		display: inline-block
+		margin-left: 9px
+		+r(500)
+			display: block
+			margin: 0 auto 20px
+	&__job
+		position: relative
+		top: 16px
+		right: 30px
+		+r(1179)
+			margin-bottom: 10px
+			top: 0
+			right: 0
 
 .logo
-	display: inline-block
-	vertical-align: top
 	color: #000203
 	font-size: 37px
+	text-decoration: none
 
 .search
-	display: inline-block
-	margin-left: 28px
 	border: 1px solid #dcdee0
 	padding: 0 0 0 9px
 	box-sizing: border-box
-	vertical-align: top
 	+r(760)
-		margin: 0 auto
-		width: 60% 
+		width: 100%
+		max-width: 438px 
 		display: flex
 		align-items: center
-	+r(400)
-		width: 70%
+		margin: 0 auto
 	&__icon
 		padding: 0 9px 0 6px
 		display: inline-block
@@ -67,44 +115,6 @@
 		+r(760)
 			max-width: 391px
 			flex-grow: 1
-
-.advanced
-	display: inline-block
-	+r(500)
-		display: block
-		margin: 0 auto 20px
-	&__value
-		margin-left: 14px
-		display: inline-block
-		vertical-align: middle
-	&__icon
-		text-decoration: none
-		display: inline-block
-		vertical-align: middle
-
-.email
-	display: inline-block
-	margin-left: 53px
-	+r(500)
-		display: block
-		margin: 0 auto 20px
-	&__icon
-		display: inline-block
-		vertical-align: middle
-		background: #edeff1
-		border-radius: 50%
-		padding: 10px
-	&__value
-		margin-left: 13px
-		display: inline-block
-		vertical-align: middle
-
-.login
-	display: inline-block
-	margin-left: 9px
-	+r(500)
-		display: block
-		margin: 0 auto 20px
 
 .nav
 	font-size: 0
@@ -127,17 +137,11 @@
 			margin-right: 7px
 
 .jobs
-	position: relative
-	top: 16px
-	right: 30px
 	display: flex
 	flex-direction: row
 	align-items: center
 	+r(1179)
 		justify-content: center
-		top: 0
-		margin-bottom: 10px
-		right: 0
 	&__value
 		margin-left: 9px 
 	&__number
@@ -157,7 +161,7 @@
 	+r(940)
 		display: block
 	&__col
-		width: 34%
+		width: 33.33%
 		border: 1px solid #edeff1
 		+r(940)
 			width: 70%

@@ -3,31 +3,36 @@
 	<div class="header__top">
 		<div class="container">
 			<div class="header__left">
-				<div class="logo">SuperCompany</div>
-				<form name="search" class="search">
+				<div class="header__logo">
+					<a href="#" class="logo">SuperCompany</a>
+				</div>
+				<div class="header__search">
+					<form name="search" class="search">
 					<input type="text" name="search" class="textual" placeholder="Search">
 					<a href="#" class="search__icon">{{mixins.icon('search')}}</a>
 				</form>
+				</div>
+				
 			</div>
 			<div class="header__right">
 				<div class="header__user">
-					<div class="advanced">
-						<div class="advanced__icon">
+					<div class="header__advanced">
+						<div class="header__advanced-icon">
 							<a href="#">{{mixins.icon('settings')}}</a>
 						</div>
-						<div class="advanced__value">
+						<div class="header__advanced-value">
 							<a href="#" class="h4">Advanced</a>
 						</div>
 					</div>
-					<div class="email">
-						<div class="email__icon">
+					<div class="header__email">
+						<div class="header__email-icon">
 							<a href="#">{{mixins.icon('home')}}</a>
 						</div>
-						<div class="email__value">
+						<div class="header__email-value">
 							<a href="#" class="textual">emma.davidson@caterptillar.com</a>
 						</div>
 					</div>
-					<div class="login">
+					<div class="header__login">
 						<a href="#" class="btn">Log out</a>
 					</div>
 				</div>
@@ -71,10 +76,12 @@
 			</ul>
 		</div>
 		<div class="header__right">
-			<div class="jobs">
+			<div class="header__job">
+				<div class="jobs">
 				<div class="jobs__icon">{{mixins.icon('jobs')}}</div>
 				<div class="jobs__value textual textual_upper">BACKGROUND JOBS</div>
 				<a href="#" class="jobs__number">8</a>
+			</div>
 			</div>
 		</div>
 
