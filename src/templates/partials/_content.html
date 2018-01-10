@@ -1,178 +1,190 @@
 <div class="main">
 	{% for item in col %}
-	<div class="main__col">
+	<div class="main__col-wrapp">
 		{% if item.gettingStarted %}
 		<div class="getting-started">
-			<div class="getting-starder__icon">
-				<a href="#">{{mixins.icon('paperplane')}}</a>
+			<div class="main__col">
+				<div class="getting-started__content">
+					<div class="getting-started__icon">
+						<a href="#">{{mixins.icon('paperplane')}}</a>
+					</div>
+					<div class="getting-started__title">
+						<h2 class="h2 h2_color">Getting Started</h2>
+						<a href="#" class="h3 h3_color-white">Not sure what to do?</a>
+					</div>
+					<a href="#" class="btn btn_color">Take a Tutorial</a>
+				</div>
 			</div>
-			<div class="getting-started__title">
-				<h2 class="h2 h2_color">Getting Started</h2>
-				<a href="#" class="h3 h3_color-white">Not sure what to do?</a>
-			</div>
-			<a href="#" class="btn btn_color">Take a Tutorial</a>
 		</div>
 		{% endif %}
 		{% if item.event %}
 		<div class="slider js-gallery">
 			<div class="slider__slide event">
-				<div class="event__top">
-					<div class="event__photo">
-						<img src="img/photo.png" alt="photo"></div>
-					<div class="event__contact">
-						<div class="event__place">
-							<h2 class="h2 h2_small">BritishMonarchy</h2>
+				<div class="main__col">
+					<div class="event__content">
+						<div class="event__top">
+							<div class="event__photo">
+								<img src="img/photo.png" alt="photo"></div>
+							<div class="event__contact">
+								<div class="event__place">
+									<h2 class="h2 h2_small">BritishMonarchy</h2>
+								</div>
+								<div class="event__email">
+									<h3 class="h3 h3_color-blue">@BritishMonarchy</h3>
+								</div>
+							</div>
+							<div class="event__icon">
+								<a href="#">{{mixins.icon('speech')}}</a>
+							</div>
 						</div>
-						<div class="event__email">
-							<h3 class="h3 h3_color-blue">@BritishMonarchy</h3>
+						<div class="event__description">
+							<p>
+								It is a pleasure to open the Information Age exhibition today at the @ScienceMuseum and I hope people will enjoy visiting.
+							</p>
 						</div>
-					</div>
-
-					<div class="event__icon">
-						<a href="#">{{mixins.icon('speech')}}</a>
-					</div>
-				</div>
-
-				<div class="event__description">
-					<p>
-						It is a pleasure to open the Information Age exhibition today at the @ScienceMuseum and I hope people will enjoy visiting.
-					</p>
-				</div>
-				<div class="event__bottom">
-					<div class="event__soc-icon">
-						<a href="#">{{mixins.icon('twitter')}}</a>
-					</div>
-					<div class="event__date">
-						<h3 class="h3 h3_color-grey">1:35 PM - 24 Oct 2014</h3>
-					</div>
+						<div class="event__bottom">
+							<div class="event__soc-icon">
+								<a href="#">{{mixins.icon('twitter')}}</a>
+							</div>
+							<div class="event__date">
+								<h3 class="h3 h3_color-grey">1:35 PM - 24 Oct 2014</h3>
+							</div>
+						</div>
+					</div>					
 				</div>
 			</div>
 			<div class="slider__slide event">
-				<div class="event__top">
-					<div class="event__photo">
-						<img src="img/photo.png" alt="photo"></div>
-					<div class="event__contact">
-						<div class="event__place">
-							<h2 class="h2 h2_small">BritishMonarchy</h2>
+				<div class="main__col">
+					<div class="event__content">
+						<div class="event__top">
+							<div class="event__photo">
+								<img src="img/photo.png" alt="photo"></div>
+							<div class="event__contact">
+								<div class="event__place">
+									<h2 class="h2 h2_small">BritishMonarchy</h2>
+								</div>
+								<div class="event__email">
+									<h3 class="h3 h3_color-blue">@BritishMonarchy</h3>
+								</div>
+							</div>
+							<div class="event__icon">
+								<a href="#">{{mixins.icon('speech')}}</a>
+							</div>
 						</div>
-						<div class="event__email">
-							<h3 class="h3 h3_color-blue">@BritishMonarchy</h3>
+						<div class="event__description">
+							<p>
+								It is a pleasure to open the Information Age exhibition today at the @ScienceMuseum and I hope people will enjoy visiting.
+							</p>
+						</div>
+						<div class="event__bottom">
+							<div class="event__soc-icon">
+								<a href="#">{{mixins.icon('twitter')}}</a>
+							</div>
+							<div class="event__date">
+								<h3 class="h3 h3_color-grey">1:35 PM - 24 Oct 2014</h3>
+							</div>
 						</div>
 					</div>
-					<div class="event__icon">
-						<a href="#">{{mixins.icon('speech')}}</a>
-					</div>
-				</div>
-				<div class="event__description">
-					<p>
-						It is a pleasure to open the Information Age exhibition today at the @ScienceMuseum and I hope people will enjoy visiting.
-					</p>
-				</div>
-				<div class="event__bottom">
-					<div class="event__soc-icon">
-						<a href="#">{{mixins.icon('twitter')}}</a>
-					</div>
-					<div class="event__date">
-						<h3 class="h3 h3_color-grey">1:35 PM - 24 Oct 2014</h3>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 		{% endif %}
-		<div class="features">
-			<div class="features__title">
-				<h2 class="h2">{{item.title}}</h2>
-			</div>
-			<div class="features__link">
-				<a href="#" class="h3">{{item.link}}</a>
-			</div>
-			<div class="features__icon">
-				{% if item.collectionIcon %}
-				<a href="#">{{mixins.icon('buffer')}}</a>
+		<div class="main__col">
+			<div class="features">
+				<div class="features__title">
+					<h2 class="h2">{{item.title}}</h2>
+				</div>
+				<div class="features__link">
+					<a href="#" class="h3">{{item.link}}</a>
+				</div>
+				<div class="features__icon">
+					{% if item.collectionIcon %}
+					<a href="#">{{mixins.icon('buffer')}}</a>
+					{% endif %}
+		    			{% if item.linkIcon %}
+					<a href="#">{{mixins.icon('link')}}</a>
+					{% endif %}
+		    			{% if item.shareIcon %}
+					<a href="#">{{mixins.icon('share')}}</a>
+					{% endif %}
+				</div>
+				{% if item.list %}
+				<div class="features__info">
+					<ul class="list">
+						{% for items in list %}
+						<li class="list__item">
+							<a href="#" class="list__title h4 h4_big">{{items.titles}}</a>
+							<a href="#" class="list__info h5">{{items.info}}</a>
+						</li>
+						{% endfor %}
+					</ul>
+					<div class="features__button">
+						<a href="#" class="btn">See More</a>
+					</div>
+				</div>
 				{% endif %}
-				{% if item.linkIcon %}
-				<a href="#">{{mixins.icon('link')}}</a>
-				{% endif %}
-				{% if item.shareIcon %}
-				<a href="#">{{mixins.icon('share')}}</a>
+		    	{% if item.list2 %}
+				<div class="features__info">
+					<ul class="list">
+						{% for items in list2 %}
+						<li class="list__item">
+							<a href="#" class="list__title h4 h4_big">{{items.titles}}</a>
+							<a href="#" class="list__info h5">{{items.info}}</a>
+						</li>
+						{% endfor %}
+					</ul>
+					<div class="features__button">
+						<a href="#" class="btn">See More</a>
+					</div>
+				</div>
 				{% endif %}
 			</div>
-			{% if item.list %}
-			<div class="features__info">
-				<ul class="list">
-					{% for items in list %}
-					<li class="list__item">
-						<a href="#" class="list__title h4 h4_big">{{items.titles}}</a>
-						<a href="#" class="list__info h5">{{items.info}}</a>
-					</li>
-					{% endfor %}
-				</ul>
-				<div class="features__button">
-					<a href="#" class="btn">See More</a>
+			{% if item.workspaces %}
+			<div class="workspaces">
+				<div class="workspaces__icon">
+					<a href="#">{{mixins.icon('workspace')}}</a>
+				</div>
+				<div class="workspaces__title">
+					<h2 class="h2 h2_s">Workspaces</h2>
+				</div>
+			</div>
+			{% endif %}			
+		    {% if item.duracell %}
+			<div class="features">
+				<div class="features__item">
+					<ul class="list">
+						<li class="list__item">
+							<a href="#" class="list__title h4 h4_big">Duracell Inc</a>
+							<a href="#" class="list__info h5">
+								PM, Eng & SQA document share and test file locations for Cogniance engagement
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			{% endif %}
-			{% if item.list2 %}
-			<div class="features__info">
-				<ul class="list">
-					{% for items in list2 %}
-					<li class="list__item">
-						<a href="#" class="list__title h4 h4_big">{{items.titles}}</a>
-						<a href="#" class="list__info h5">{{items.info}}</a>
-					</li>
-					{% endfor %}
-				</ul>
-				<div class="features__button">
-					<a href="#" class="btn">See More</a>
+		    {% if item.more %}
+			<div class="more">
+				<div class="more__item">
+					<div class="more__link">
+						<h2 class="h2 h2_s">Wiki</h2>
+					</div>
+					<div class="more__button">
+						<a href="#" class="btn">See More</a>
+					</div>
+				</div>
+				<div class="more__item">
+					<div class="more__link">
+						<h2 class="h2 h2_s">Weblogs</h2>
+					</div>
+					<div class="more__button">
+						<a href="#" class="btn">See More</a>
+					</div>
 				</div>
 			</div>
 			{% endif %}
 		</div>
-		{% if item.workspaces %}
-		<div class="workspaces">
-			<div class="workspaces__icon">
-				<a href="#">{{mixins.icon('workspace')}}</a>
-			</div>
-			<div class="workspaces__title">
-				<h2 class="h2 h2_s">Workspaces</h2>
-			</div>
-		</div>
-		{% endif %}
-				
-		{% if item.duracell %}
-		<div class="features">
-			<div class="features__item">
-				<ul class="list">
-					<li class="list__item">
-						<a href="#" class="list__title h4 h4_big">Duracell Inc</a>
-						<a href="#" class="list__info h5">
-							PM, Eng & SQA document share and test file locations for Cogniance engagement
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		{% endif %}
-	    {% if item.more %}
-		<div class="more">
-			<div class="more__item">
-				<div class="more__link">
-					<h2 class="h2 h2_s">Wiki</h2>
-				</div>
-				<div class="more__button">
-					<a href="#" class="btn">See More</a>
-				</div>
-			</div>
-			<div class="more__item">
-				<div class="more__link">
-					<h2 class="h2 h2_s">Weblogs</h2>
-				</div>
-				<div class="more__button">
-					<a href="#" class="btn">See More</a>
-				</div>
-			</div>
-		</div>
-		{% endif %}
 	</div>
 	{% endfor %}
 </div>

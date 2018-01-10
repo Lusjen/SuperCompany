@@ -160,7 +160,7 @@
 	overflow: hidden
 	+r(940)
 		display: block
-	&__col
+	&__col-wrapp
 		width: 33.33%
 		border: 1px solid #edeff1
 		+r(940)
@@ -168,16 +168,18 @@
 			margin: 0 auto
 		+r(560)
 			width: 100%
+	&__col
+		padding: 0 30px 
 
 .features
-	padding: 25px 30px
+	padding: 25px 0
 	position: relative
 	&__title
 		margin-bottom: 3px
 	&__icon
 		position: absolute
 		top: 30px
-		right: 30px
+		right: 0
 	&__info
 		margin-top: 30px		
 
@@ -191,16 +193,18 @@
 
 .getting-started
 	background-color: #60686f
-	padding: 24px 30px 20px 30px
-	display: flex
-	justify-content: space-between
-	align-items: center
+	&__content
+		padding: 24px 0 20px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
 	&__title
 		margin: 0 16px 0 28px
 
 .event
 	background-color: #edeff1
-	padding: 23px 30px 21px 30px
+	&__content
+		padding: 23px 0 21px 0
 	&__top
 		overflow: hidden
 		margin-bottom: 39px
@@ -265,7 +269,6 @@
 	background: url('../img/rounded2.png') #FFF no-repeat center center
 
 .workspaces
-	padding-left: 30px
 	overflow: hidden
 	&__icon
 		float: left
@@ -274,7 +277,6 @@
 		margin-left: 9px
 
 .more
-	padding-left: 30px
 	margin-bottom: 27px
 	overflow: hidden
 	&__item
